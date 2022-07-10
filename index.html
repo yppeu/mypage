@@ -18,6 +18,12 @@
 
         body {
             background-color: #44398A;
+            text-align: center;
+
+        }
+
+        a{
+            text-decoration: none;
         }
 
         .profile {
@@ -28,8 +34,10 @@
             border: 4px solid white;
 
             background-image: url('iconmonstr-smiley-20-96.png');
-            background-position: center;
             background-size: cover;
+
+            display: block; 
+            margin: 30px auto;
         }
 
         .main {
@@ -57,31 +65,27 @@
         .wrap {
             width: 350px;
             margin: 30px auto 0px auto;
+            display: inline-block;
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
 
         /* 오른쪽 화살괄호(>)로 표기하면, warp으로 이름붙인 div안에 모든 a 태그에 적용! */
         .wrap>a {
-            width: 300px;
+            width: 200px;
             height: 50px;
 
             background-color: white;
             border-radius: 8px;
-            margin-bottom: 10px;
 
             font-size: 14px;
             font-weight: bold;
             color: #44398A;
 
-            display: flex;
+            display:inline-flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-decoration: none;
+            margin: 5px auto;
 
             box-shadow: 2px 2px 2px 0px black;
 
@@ -91,6 +95,31 @@
             background-color: palevioletred;
             color: white;
         }
+
+        .wrap>a.lot:hover{
+            background-color: palevioletred;
+            color: white;
+        }
+
+        .wrap>a.lot{
+            width: 200px;
+            height: 50px;
+
+            background-color: white;
+            border-radius: 8px;
+
+            font-size: 14px;
+            font-weight: bold;
+            color: #44398A;
+
+            display:inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 2px 2px 2px 0px black;
+        }
+
 
     </style>
 </head>
@@ -103,7 +132,8 @@
         <a target="_blank" href="https://www.instagram.com/aqsuarine/">인스타그램</a>
         <a target="_blank" href="https://blog.naver.com/yppeu/">블로그</a>
         <p class="sub2">그럼.. 포토폴리오 보고 가실래요?</p>
-        <a target="_blank" href="#">포토폴리오</a>
+        <a class="lot" target="_blank" href="#">롯데리아 키오스크</a>
+        <a class="lot" target="_blank" href="#">클론코딩</a>
     </div>
 
 

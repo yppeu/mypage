@@ -70,7 +70,7 @@
         }
 
         /* 오른쪽 화살괄호(>)로 표기하면, warp으로 이름붙인 div안에 모든 a 태그에 적용! */
-        .wrap>a {
+        .wrap>button, a{
             width: 200px;
             height: 50px;
 
@@ -91,17 +91,17 @@
 
         }
 
-        .wrap>a:hover{
+        .wrap>button:hover, a{
             background-color: palevioletred;
             color: white;
         }
 
-        .wrap>a.lot:hover{
+        .wrap>button.lot:hover, a{
             background-color: palevioletred;
             color: white;
         }
 
-        .wrap>a.lot{
+        .wrap>button.lot, a{
             width: 200px;
             height: 50px;
 
@@ -112,12 +112,17 @@
             font-weight: bold;
             color: #44398A;
 
+
             display:inline-flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             box-shadow: 2px 2px 2px 0px black;
+        }
+
+        #disabled{
+            display:none;
         }
 
 
@@ -129,14 +134,16 @@
         <div class="profile"></div>
         <h1 class="main">수린이</h1>
         <p class="sub">코딩.. 좋아하세요?</p>
-        <a target="_blank" href="https://www.instagram.com/aqsuarine/">인스타그램</a>
-        <a target="_blank" href="https://blog.naver.com/yppeu/">블로그</a>
-        <p class="sub2">그럼.. 포토폴리오 보고 가실래요?</p>
-        <a class="lot" target="_blank" href="#">롯데리아 키오스크</a>
-        <a class="lot" target="_blank" href="https://yppeu.github.io/simsim/">심리테스트(부트스트랩)</a>
+        <button class="button" onclick="show()"/>Yes</button>
+        <button class="button" onclick="hide()"/>No</button>
+        <div id ="disabled">
+            <p class="sub2">그럼.. 포토폴리오 보고 가실래요?</p>
+            <a class="lot" target="_blank" href="https://yppeu.github.io/lot_kiosk/">롯데리아 키오스크</a>
+            <a class="lot" target="_blank" href="https://yppeu.github.io/simsim/">심리테스트(부트스트랩)</a>
+        
+        </div>
+        <script src="index.js" charset="utf-8"></script>
     </div>
-
-
 </body>
 
 </html>
